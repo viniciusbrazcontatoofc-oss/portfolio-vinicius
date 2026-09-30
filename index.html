@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinícius Braz | Portfólio</title>
+    
+    <meta name="description" content="Portfólio Profissional de Vinícius Braz">
+    
+    <!-- Fontes e Ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] },
+                    colors: { darkBg: '#080808', accentYellow: '#D9A027' }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #080808; color: #ffffff; overflow-x: hidden; margin: 0; padding: 0; }
+        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-20px); } 100% { transform: translateY(0px); } }
+        .animate-float { animation: float 5s ease-in-out infinite; }
+        
+        .esteira-scroll::-webkit-scrollbar { height: 10px; }
+        .esteira-scroll::-webkit-scrollbar-track { background: #111; border-radius: 10px; }
+        .esteira-scroll::-webkit-scrollbar-thumb { background: #D9A027; border-radius: 10px; }
+        
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #080808; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #D9A027; }
+
+        .glow-shadow { box-shadow: 0 15px 50px -10px rgba(217, 160, 39, 0.25); }
+        .transition-fade { transition: opacity 0.4s ease-in-out; }
+    </style>
+</head>
+<body class="font-sans antialiased text-white selection:bg-accentYellow selection:text-black">
+
+    <!-- HEADER -->
+    <header class="relative flex flex-col items-center justify-center min-h-screen px-6 text-center">
+        <div class="z-10 mt-[-10vh]">
+            <h1 class="text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter mb-4 drop-shadow-lg">Vinícius Braz</h1>
+            <h2 class="text-xl md:text-3xl font-normal text-accentYellow tracking-[0.4em] uppercase">Portfólio</h2>
+        </div>
+        <a href="#sobre" class="absolute bottom-12 animate-bounce opacity-50 hover:opacity-100 transition-opacity">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </a>
+    </header>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="min-h-screen flex items-center py-32 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center w-full">
+            <div class="flex flex-col justify-center space-y-8 text-gray-300 text-lg md:text-xl font-light leading-relaxed">
+                <h2 class="text-5xl font-bold mb-2 text-white flex items-center gap-6">
+                    <span class="w-16 h-1 bg-accentYellow rounded-full block"></span>Sobre mim
+                </h2>
+                <p>Olá, sou o <strong class="text-white font-bold">Vinícius Braz</strong>, publicitário com atuação em comunicação, posicionamento e direção criativa.</p>
+                <p>Desenvolvo projetos que unem estratégia e criatividade, desde a definição do conceito até a execução. Trabalho com conteúdo, identidade visual, gravação/edição de vídeos e soluções com IA para construir comunicações mais claras, consistentes e alinhadas aos objetivos de cada marca.</p>
+                <p>Meu trabalho começa na estratégia e ganha forma na criação.</p>
+            </div>
+            <div class="flex justify-center lg:justify-end">
+                <img src="https://i.postimg.cc/8C6b2vNz/Foto-de-Perfil-Minha.png" alt="Vinícius Braz" class="w-full max-w-[450px] aspect-square object-cover rounded-[2.5rem] animate-float glow-shadow border border-white/10">
+            </div>
+        </div>
+    </section>
+
+    <!-- TRABALHOS -->
+    <section id="trabalhos" class="min-h-screen flex flex-col justify-center py-32 px-4 w-full max-w-[1400px] mx-auto">
+        <h2 class="text-5xl md:text-6xl font-bold text-center mb-24 text-white tracking-tight">Meus Trabalhos</h2>
+        <div class="flex flex-col md:flex-row gap-4 h-[70vh] min-h-[500px]">
+            <a href="#mostruario-video" class="relative flex-1 rounded-[2rem] overflow-hidden transition-all duration-700 ease-in-out hover:flex-[3] bg-zinc-900 group flex items-end justify-center pb-12 border border-white/5">
+                <div class="absolute inset-0">
+                    <img src="https://i.postimg.cc/c4JFp3PD/nubank-Cover.jpg" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-all" alt="Capa Edição de Vídeo">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                </div>
+                <h3 class="relative z-20 text-3xl font-bold text-white group-hover:text-accentYellow transition-colors">Edição de Vídeo</h3>
+            </a>
+            
+            <a href="#mostruario-post" class="relative flex-1 rounded-[2rem] overflow-hidden transition-all duration-700 ease-in-out hover:flex-[3] bg-zinc-900 group flex items-end justify-center pb-12 border border-white/5">
+                <div class="absolute inset-0">
+                    <img src="https://i.postimg.cc/hv6vRXSB/ERRO-01.png" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-all" alt="Capa Postagens">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                </div>
+                <h3 class="relative z-20 text-3xl font-bold text-white group-hover:text-accentYellow transition-colors">Postagens</h3>
+            </a>
+
+            <a href="#mostruario-identidade" class="relative flex-1 rounded-[2rem] overflow-hidden transition-all duration-700 ease-in-out hover:flex-[3] bg-zinc-900 group flex items-end justify-center pb-12 border border-white/5">
+                <div class="absolute inset-0">
+                    <img src="https://i.postimg.cc/ZR7dpWjY/FM-IDENTIDADE-E-MATERIAIS-(1).png" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-all" alt="Capa Identidade Visual">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                </div>
+                <h3 class="relative z-20 text-3xl font-bold text-white group-hover:text-accentYellow transition-colors">Identidade Visual</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- MOSTRUÁRIO VÍDEO -->
+    <section id="mostruario-video" class="min-h-screen flex flex-col justify-center py-32 bg-[#0c0c0c] border-t border-white/5">
+        <div class="max-w-[1600px] mx-auto w-full">
+            <h3 class="text-4xl md:text-5xl font-bold text-accentYellow mb-16 pl-6 lg:pl-24"><span class="text-white">/</span> Edição de Vídeo</h3>
+            <div id="video-container" class="flex overflow-x-auto gap-8 pb-12 px-6 lg:px-24 esteira-scroll items-center snap-x">
+                
+                <!-- VÍDEO 1 -->
+                <div class="flex-none w-[300px] md:w-[380px] aspect-[9/16] bg-black rounded-[2rem] overflow-hidden relative border border-white/10 shadow-xl snap-center">
+                    <iframe src="https://drive.google.com/file/d/1gkt7ypSTbq4pNBagA226-2O5sN6N8PGs/preview" width="100%" height="100%" allow="autoplay; fullscreen" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"></iframe>
+                </div>
+
+                <!-- VÍDEO 2 (ANTIGO 3) -->
+                <div class="flex-none w-[300px] md:w-[380px] aspect-[9/16] bg-black rounded-[2rem] overflow-hidden relative border border-white/10 shadow-xl snap-center">
+                    <iframe src="https://drive.google.com/file/d/1Sp2sWv1uw_dt1BHXB4DGh9WIsjNhc5BR/preview" width="100%" height="100%" allow="autoplay; fullscreen" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%; border:0; border-radius:2rem;"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MOSTRUÁRIO POSTAGENS -->
+    <section id="mostruario-post" class="min-h-screen flex flex-col justify-center py-32 bg-black border-t border-white/5">
+        <div class="max-w-[1600px] mx-auto w-full">
+            <h3 class="text-4xl md:text-5xl font-bold text-accentYellow mb-16 pl-6 lg:pl-24"><span class="text-white">/</span> Postagens</h3>
+            <div id="post-container" class="flex overflow-x-auto gap-8 pb-12 px-6 lg:px-24 esteira-scroll items-center snap-x"></div>
+        </div>
+    </section>
+
+    <!-- MOSTRUÁRIO IDENTIDADE -->
+    <section id="mostruario-identidade" class="min-h-screen flex flex-col justify-center py-32 bg-[#0c0c0c] border-t border-white/5">
+        <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-24">
+            <h3 class="text-4xl md:text-5xl font-bold text-accentYellow mb-16"><span class="text-white">/</span> Identidade Visual</h3>
+            <div class="relative w-full aspect-video bg-neutral-900 rounded-[2rem] overflow-hidden border border-white/10 flex items-center justify-center group shadow-2xl">
+                <img id="slide-img" src="https://i.postimg.cc/ZR7dpWjY/FM-IDENTIDADE-E-MATERIAIS-(1).png" class="w-full h-full object-cover transition-fade" alt="Slide">
+                <button id="prev-slide" class="absolute left-6 w-14 h-14 bg-black/50 text-white rounded-full flex items-center justify-center hover:bg-accentYellow hover:text-black transition-colors hidden z-10 backdrop-blur-sm border border-white/20"><i class="fa-solid fa-chevron-left text-xl"></i></button>
+                <button id="next-slide" class="absolute right-6 w-14 h-14 bg-black/50 text-white rounded-full flex items-center justify-center hover:bg-accentYellow hover:text-black transition-colors z-10 backdrop-blur-sm border border-white/20"><i class="fa-solid fa-chevron-right text-xl"></i></button>
+                <div class="absolute bottom-6 bg-black/70 px-6 py-2 rounded-full backdrop-blur-md border border-white/10">
+                    <span id="slide-counter" class="text-white font-semibold">1 / 13</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contato" class="py-32 flex flex-col items-center justify-center bg-black border-t border-white/5">
+        <div class="flex gap-8 justify-center">
+            <a href="https://wa.me/5516996292106" target="_blank" class="w-16 h-16 rounded-full bg-zinc-900 flex items-center justify-center text-3xl hover:bg-accentYellow hover:text-black transition-all"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/euviniciusbraz/" target="_blank" class="w-16 h-16 rounded-full bg-zinc-900 flex items-center justify-center text-3xl hover:bg-accentYellow hover:text-black transition-all"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/vin%C3%ADcius-braz-70b175323" target="_blank" class="w-16 h-16 rounded-full bg-zinc-900 flex items-center justify-center text-3xl hover:bg-accentYellow hover:text-black transition-all"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Postagens (6 Itens reais, removido Post 6 placeholder)
+            const postContainer = document.getElementById('post-container');
+            const postImages = [
+                "https://i.postimg.cc/hv6vRXSB/ERRO-01.png",                                             // Post 1
+                "https://i.postimg.cc/2ywHRJb5/O-que-faz-uma-casa-realmente-ter-personalidade-post.png",  // Post 2
+                "https://lh3.googleusercontent.com/d/1nRFt2dhK2eYmIyHUbX_i8WfRqVPRszsv",                // Post 3
+                "https://lh3.googleusercontent.com/d/1VynENayxQRZui4Eutt6CPDt8JeaRckbU",                // Post 4
+                "https://lh3.googleusercontent.com/d/1Ca48lrk-VDAGdfiG3Dl-dOp87CtW-c2x",                // Post 5
+                "https://i.postimg.cc/sXsXbrf1/FM-DIA-DE-JOGO-FEED-(3).png"                             // Post 6 (Antigo 7)
+            ];
+
+            postImages.forEach((url, index) => {
+                const div = document.createElement('div');
+                div.className = "flex-none w-[350px] md:w-[450px] aspect-[4/5] bg-neutral-900 rounded-[2rem] overflow-hidden border border-white/10 group cursor-pointer shadow-xl snap-center";
+                div.innerHTML = `<img src="${url}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" alt="Post ${index + 1}">`;
+                postContainer.appendChild(div);
+            });
+
+            // Slideshow Identidade (13 Slides)
+            let currentSlide = 1;
+            const totalSlides = 13;
+            const slides = {
+                1: "https://i.postimg.cc/ZR7dpWjY/FM-IDENTIDADE-E-MATERIAIS-(1).png",
+                2: "https://i.postimg.cc/bJDBLzMm/2.png",
+                3: "https://i.postimg.cc/zBbcpJMt/3.png",
+                4: "https://i.postimg.cc/vmSKW1Pn/5.png",
+                5: "https://i.postimg.cc/TPHsrykD/6.png",
+                6: "https://i.postimg.cc/W4fyMD9r/7.png",
+                7: "https://i.postimg.cc/cJ5zQKD8/8.png",
+                8: "https://i.postimg.cc/SKtPWXZG/9.png",
+                9: "https://i.postimg.cc/25Xt4qH9/10.png",
+                10: "https://i.postimg.cc/HLPNQJSZ/11.png",
+                11: "https://i.postimg.cc/Ss2vVy5L/12.png",
+                12: "https://i.postimg.cc/KzkHQZV5/13.png",
+                13: "https://i.postimg.cc/Qt9ySXPm/14.png"
+            };
+
+            const slideImg = document.getElementById('slide-img');
+            const prevBtn = document.getElementById('prev-slide');
+            const nextBtn = document.getElementById('next-slide');
+            const counter = document.getElementById('slide-counter');
+
+            function updateSlide() {
+                slideImg.style.opacity = '0';
+                setTimeout(() => {
+                    slideImg.src = slides[currentSlide];
+                    slideImg.onload = () => slideImg.style.opacity = '1';
+                }, 200);
+                counter.innerText = `${currentSlide} / ${totalSlides}`;
+                prevBtn.classList.toggle('hidden', currentSlide === 1);
+                nextBtn.classList.toggle('hidden', currentSlide === totalSlides);
+            }
+
+            nextBtn.onclick = () => { if(currentSlide < totalSlides) { currentSlide++; updateSlide(); } };
+            prevBtn.onclick = () => { if(currentSlide > 1) { currentSlide--; updateSlide(); } };
+        });
+    </script>
+</body>
+</html>
